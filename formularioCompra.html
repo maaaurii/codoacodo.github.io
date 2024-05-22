@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="CSS/formularioCompra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="contenedor-head">
+            <div id="contenedor-imagen"><img src="Imagenes/M2.jpg" alt="logo" id="icono"></div>
+            <div id="contenedor-titulo">
+                <h5 id="nombre-de-la-pagina">Jardin de los Muertos</h5>
+            </div>
+            <div id="contenedor-navbar">
+                <ul id="lista">
+                    <li id="inicio"><a href="index.html">Inicio</a></li>
+                    <li id="barra">|</li>
+                    <li id="mas-productos"><a href="#main">Mas productos</a></li>
+                    <li id="barra">|</li>
+                    <li id="contacto"><a href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="contenedor-formulario">
+            <h4>Formulario de compra</h2>
+            <form>
+
+                <div class="contenedor-imagen"><img id="imagen-producto" alt="imagen del producto"></div>
+                <div id="info-producto"></div>
+                <label for="" class="letras" id="select">
+                    Cantidad:
+                    <select name="" id="cantidad">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <h3 class="letras">Informacion de envio: </h3>
+                <br>
+                <label for="" class="letras">Apellido y nombre:<input type="text" id="nombre"></label>
+                <br>
+                <label for="" class="letras">Direccion</label>
+                <br>
+                <label for="" class="letras">Calle: <input type="text" id="calle"></label>
+                <label for="" class="letras">Numero: <input type="text" id="numero"></label>
+                <label for="" class="letras">Localidad: <input type="text" id="localidad"></label>
+                <label for="" class="letras">CP: <input type="text" id="cp"></label>
+
+
+    
+                <button type="submit" onclick="mostraralerta()">Enviar</button>
+            </form>
+        </div>
+    </main>
+    
+
+
+    <footer id="footer">
+        <div class="contacto">
+            <h2 id="datos-contacto">Mauricio Sanchez</h2>
+            <h3 id="telefono">Telefono: 1149728308</h3>
+            <h3 id="redes">Redes sociales: <a id="linkedin" href="https://www.linkedin.com/in/mauricio-sanchez-37a759265/" target="_blank">Linkedin</a></h3>
+        </div>
+    </footer>
+    
+    <script src="JS/formularioCompra.js"></script>
+</body>
+</html>

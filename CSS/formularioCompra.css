@@ -1,0 +1,250 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    top: 0;
+    width: 100%;
+}
+
+#contenedor-head {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-image: linear-gradient(to right, #4CAF50, #555);
+}
+
+#contenedor-imagen {
+    margin-right: 10px;
+}
+
+#icono {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#contenedor-titulo {
+    padding: 0;
+    margin: 0;
+}
+
+#nombre-de-la-pagina {
+    font-family: "Bangers";
+    font-size: 70px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+#contenedor-navbar {
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: "Bangers";
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#contenedor-formulario {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px;
+    margin: 20px 50px;
+    border-radius: 20px;
+}
+
+.contenedor-imagen {
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+}
+
+select {
+    width: 8%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#select {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+}
+
+h4 {
+    font-family: "Bangers";
+    font-size: 60px;
+}
+
+.letras {
+    font-family: "Bangers";
+    font-size: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+button {
+    font-family: "Bangers";
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, #4CAF50, #555);
+    font-family: "Bangers";
+    font-size: 20px;
+    padding: 20px;
+}
+
+.contacto,
+.redes {
+    text-align: center;
+}
+
+h2, h3 {
+    margin: 0;
+    color: black;
+}
+
+#linkedin {
+    color: black;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease;
+}
+
+#linkedin:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #nombre-de-la-pagina {
+        font-size: 50px;
+    }
+
+    #contenedor-navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contenedor-navbar ul li {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #contenedor-formulario {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    .letras {
+        font-size: 30px;
+    }
+
+    select {
+        width: 20%;
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #nombre-de-la-pagina {
+        font-size: 40px;
+    }
+
+    #contenedor-navbar ul {
+        align-items: center;
+    }
+
+    #contenedor-navbar ul li {
+        font-size: 20px;
+    }
+
+    #contenedor-formulario {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .letras {
+        font-size: 20px;
+    }
+
+    select {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+}

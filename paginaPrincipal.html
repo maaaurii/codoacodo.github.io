@@ -1,0 +1,233 @@
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador Mauricio Sanchez</title>
+    <link rel="stylesheet" href="CSS/paginaPrincipal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="contenedor-head">
+            <div id="contenedor-imagen"><img src="Imagenes/M2.jpg" alt="logo" id="icono"></div>
+            <div id="contenedor-titulo"><h5 id="nombre-de-la-pagina">Jardin de los Muertos</h5></div>
+            <div id="contenedor-navbar">
+                <ul id="lista">
+                    <li id="inicio"><a href="index.html">Inicio</a></li>
+                    <li id="barra">|</li>
+                    <li id="mas-productos"><a href="#main">Mas productos</a></li>
+                    <li id="barra">|</li>
+                    <li id="contacto"><a href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div id="contendor-main">
+            <div class="contenedor-imagen" id="img1">
+                <img src="Imagenes/missile-toe.png.adapt.crop16x9.png" alt="imagen Muerdago Misil">
+                <h2>Muerdago Misil</h2>
+                <p>500 soles</p>
+                <button onclick="redirigir('Muerdago Misil', '500', 'Imagenes/missile-toe.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img2">
+                <img src="Imagenes/homing-thistle.png.adapt.crop16x9.png" alt="imagen Cardo Teledirigido">
+                <h2>Cardo Teledirigido</h2>
+                <p>250 soles</p>
+                <button onclick="redirigir('Cardo Teledirigido', '250', 'Imagenes/homing-thistle.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img3">
+                <img src="Imagenes/ghost-pepper.png.adapt.crop16x9.png" alt="imagen Chile Fantasma">
+                <h2>Chile Fantasma</h2>
+                <p>75 soles</p>
+                <button onclick="redirigir('Chile Fantasma', '75', 'Imagenes/ghost-pepper.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img4">
+                <img src="Imagenes/dusk-lobber.png.adapt.crop16x9.png" alt="imagen Lanzadora Oscura">
+                <h2>Lanzadora Oscura</h2>
+                <p>150 soles</p>
+                <button onclick="redirigir('Lanzadora Oscura', '150', 'Imagenes/dusk-lobber.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img5">
+                <img src="Imagenes/electric-peashooter.png.adapt.crop16x9.png" alt="imagen Lanzaguisantes Electrico">
+                <h2>Lanzaguisantes Electrico</h2>
+                <p>150 soles</p>
+                <button onclick="redirigir('Lanzaguisantes Electrico', '150', 'Imagenes/electric-peashooter.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img6">
+                <img src="Imagenes/guacodile.png.adapt.crop16x9.png" alt="imagen Guacodrilo">
+                    <h2>Guacodrilo</h2>
+                    <p>125 soles</p>
+                    <button onclick="redirigir('Guacodrilo', '125', 'Imagenes/guacodile.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img7">
+                <img src="Imagenes/cold-snapdragon.png.adapt.crop16x9.png" alt="imagen Bocadragon Gelido">
+                    <h2>Bocadragon Gelido</h2>
+                    <p>150 soles</p>
+                    <button onclick="redirigir('Bocadragon Gelido', '150', 'Imagenes/cold-snapdragon.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img8">
+                <img src="Imagenes/primal-sunflower.png.adapt.crop16x9.png" alt="imagen Girasol Primitivo">
+                    <h2>Girasol Primitivo</h2>
+                    <p>75 soles</p>
+                    <button onclick="redirigir('Girasol Primitivo', '75', 'Imagenes/primal-sunflower.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img9">
+                <img src="Imagenes/shadow-shroom.png.adapt.crop16x9.png" alt="imagen Sombraseta">
+                    <h2>Sombraseta</h2>
+                    <p>50 soles</p>
+                    <button onclick="redirigir('Sombraseta', '50', 'Imagenes/shadow-shroom.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+        </div>
+        <div id="contenedor-comentarios">
+            <div id="contenedor-dejarcomentario">
+                <h3 class="dejarcomentario">Dejanos tu comentario:</h3>
+                <textarea id="comentarioTextarea" cols="30" rows="5" placeholder="Escribe tu comentario aquí"></textarea>
+                <button type="button" onclick="agregarComentario()">Enviar</button>
+            </div>
+            <div id="contenedor-comentarioscliente">
+                <h3 class="dejarcomentario">Comentarios de nuestros clientes:</h3>
+                <ul id="comentariosLista"></ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="contacto">
+            <h2 id="datos-contacto">Mauricio Sanchez</h2>
+            <h3 id="telefono">Telefono: 1149728308</h3>
+            <h3 id="redes">Redes sociales: <a id="linkedin" href="https://www.linkedin.com/in/mauricio-sanchez-37a759265/" target="_blank">Linkedin</a></h3>
+        </div>
+    </footer>
+    <script src="JS/paginaPrincipal.js"></script>
+</body>
+
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador Mauricio Sanchez</title>
+    <link rel="stylesheet" href="CSS/paginaPrincipal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body class="fade-in">
+    <header class="fade-in">
+        <div id="contenedor-head">
+            <div id="contenedor-imagen"><img src="Imagenes/M2.jpg" alt="logo" id="icono"></div>
+            <div id="contenedor-titulo"><h5 id="nombre-de-la-pagina">Jardin de los Muertos</h5></div>
+            <div id="contenedor-navbar">
+                <ul id="lista">
+                    <li id="inicio"><a href="index.html">Inicio</a></li>
+                    <li id="barra">|</li>
+                    <li id="mas-productos"><a href="#main">Mas productos</a></li>
+                    <li id="barra">|</li>
+                    <li id="contacto"><a href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="fade-in">
+        <div id="contendor-main">
+            <div class="contenedor-imagen" id="img1">
+                <img src="Imagenes/missile-toe.png.adapt.crop16x9.png" alt="imagen Muerdago Misil">
+                <h2>Muerdago Misil</h2>
+                <p>500 soles</p>
+                <button onclick="redirigir('Muerdago Misil', '500', 'Imagenes/missile-toe.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img2">
+                <img src="Imagenes/homing-thistle.png.adapt.crop16x9.png" alt="imagen Cardo Teledirigido">
+                <h2>Cardo Teledirigido</h2>
+                <p>250 soles</p>
+                <button onclick="redirigir('Cardo Teledirigido', '250', 'Imagenes/homing-thistle.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img3">
+                <img src="Imagenes/ghost-pepper.png.adapt.crop16x9.png" alt="imagen Chile Fantasma">
+                <h2>Chile Fantasma</h2>
+                <p>75 soles</p>
+                <button onclick="redirigir('Chile Fantasma', '75', 'Imagenes/ghost-pepper.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img4">
+                <img src="Imagenes/dusk-lobber.png.adapt.crop16x9.png" alt="imagen Lanzadora Oscura">
+                <h2>Lanzadora Oscura</h2>
+                <p>150 soles</p>
+                <button onclick="redirigir('Lanzadora Oscura', '150', 'Imagenes/dusk-lobber.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img5">
+                <img src="Imagenes/electric-peashooter.png.adapt.crop16x9.png" alt="imagen Lanzaguisantes Electrico">
+                <h2>Lanzaguisantes Electrico</h2>
+                <p>150 soles</p>
+                <button onclick="redirigir('Lanzaguisantes Electrico', '150', 'Imagenes/electric-peashooter.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img6">
+                <img src="Imagenes/guacodile.png.adapt.crop16x9.png" alt="imagen Guacodrilo">
+                    <h2>Guacodrilo</h2>
+                    <p>125 soles</p>
+                    <button onclick="redirigir('Guacodrilo', '125', 'Imagenes/guacodile.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img7">
+                <img src="Imagenes/cold-snapdragon.png.adapt.crop16x9.png" alt="imagen Bocadragon Gelido">
+                    <h2>Bocadragon Gelido</h2>
+                    <p>150 soles</p>
+                    <button onclick="redirigir('Bocadragon Gelido', '150', 'Imagenes/cold-snapdragon.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img8">
+                <img src="Imagenes/primal-sunflower.png.adapt.crop16x9.png" alt="imagen Girasol Primitivo">
+                    <h2>Girasol Primitivo</h2>
+                    <p>75 soles</p>
+                    <button onclick="redirigir('Girasol Primitivo', '75', 'Imagenes/primal-sunflower.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+            <div class="contenedor-imagen" id="img9">
+                <img src="Imagenes/shadow-shroom.png.adapt.crop16x9.png" alt="imagen Sombraseta">
+                    <h2>Sombraseta</h2>
+                    <p>50 soles</p>
+                    <button onclick="redirigir('Sombraseta', '50', 'Imagenes/shadow-shroom.png.adapt.crop16x9.png')">Comprar</button>
+            </div>
+        </div>
+        <!--
+        <div id="contenedor-comentarios">
+            <div id="contenedor-dejarcomentario">
+                <h3 class="dejarcomentario">Dejanos tu comentario:</h3>
+                <textarea id="comentarioTextarea" cols="30" rows="5" placeholder="Escribe tu comentario aquí"></textarea>
+                <button type="button" onclick="agregarComentario()">Enviar</button>
+            </div>
+            <div id="contenedor-comentarioscliente">
+                <h3 class="dejarcomentario">Comentarios de nuestros clientes:</h3>
+                <ul id="comentariosLista"></ul>
+            </div>
+        </div>
+    -->
+    <div id="contenedor-comentarios">
+        <div id="contenedor-dejarcomentario">
+            <h3 class="dejarcomentario">Dejanos tu comentario:</h3>
+            <textarea id="comentarioTextarea" cols="30" rows="5" placeholder="Escribe tu comentario aquí"></textarea>
+            <button type="button" onclick="agregarComentario()">Enviar</button>
+        </div>
+        <div id="contenedor-comentarioscliente">
+            <h3 class="dejarcomentario">Comentarios de nuestros clientes:</h3>
+            <ul id="comentariosLista"></ul> <!-- Asegúrate de que sea una lista desordenada (ul) -->
+        </div>
+    </div>
+    
+    </main>
+    <footer id="footer" class="fade-in">
+        <div class="contacto">
+            <h2 id="datos-contacto">Mauricio Sanchez</h2>
+            <h3 id="telefono">Telefono: 1149728308</h3>
+            <h3 id="redes">Redes sociales: <a id="linkedin" href="https://www.linkedin.com/in/mauricio-sanchez-37a759265/" target="_blank">Linkedin</a></h3>
+        </div>
+    </footer>
+    <script src="JS/paginaPrincipal.js"></script>
+</body>
+</html>
+
